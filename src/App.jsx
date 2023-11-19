@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 
 function App() {
   const [counter, setCounter] = useState(0);
+  const [running. setRunning] = useState(false)
 
   const resetCounter = () => {
     setCounter(0);
@@ -24,6 +25,14 @@ function App() {
     <div className='container'>
       <div className="counter">{counter}</div>
       <div className="btn-container">
+        <button 
+        className='btn'
+        onClick={resetCounter}>reset</button>
+
+        <button 
+        className='btn'
+        onClick={resetCounter}>reset</button>
+
         <button 
         className='btn'
         onClick={resetCounter}>reset</button>
